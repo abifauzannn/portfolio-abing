@@ -104,7 +104,7 @@ function Home() {
               <li className="flex flex-col">
                 <Link
                   to="#"
-                  className="text-9xl poppins-regular text-white uppercase font-bold hover:rotate-180 transition-transform duration-300 ease-in-out"
+                  className="text-9xl poppins-regular text-white uppercase font-bold hover:animate-pulse"
                   data-aos="flip-up"
                   onClick={() => {
                     handleNavigateClick(); // Fungsi pertama (untuk menampilkan navigasi)
@@ -115,7 +115,7 @@ function Home() {
                 </Link>
                 <Link
                   to="#"
-                  className="text-9xl poppins-regular text-white uppercase font-bold"
+                  className="text-9xl poppins-regular text-white uppercase font-bold hover:animate-pulse"
                   data-aos="flip-up"
                   onClick={() => changeSection("nav-section")}
                 >
@@ -123,7 +123,7 @@ function Home() {
                 </Link>
                 <Link
                   to="#"
-                  className="text-9xl poppins-regular text-white uppercase font-bold"
+                  className="text-9xl poppins-regular text-white uppercase font-bold hover:animate-pulse"
                   data-aos="flip-up"
                   onClick={() => changeSection("nav-section")}
                 >
@@ -222,11 +222,11 @@ function Home() {
                 data-aos-delay="100"
                 data-aos-anchor-placement="bottom-bottom"
               >
-                Nav Section
+                Follow me on social media
               </p>
             </div>
             <div className="flex flex-row space-x-4">
-              <p
+              <a href="https://www.instagram.com/abifauzannn?igsh=MWFpNWZoMGJxM3JueQ==" rel="noreferrer"  target="_blank"
                 className="text-[20px] poppins-regular flex items-center relative group"
                 data-aos="fade-left"
                 data-aos-delay="100"
@@ -234,8 +234,8 @@ function Home() {
               >
                 Instagram <MdArrowOutward />
                 <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </p>
-              <p
+              </a>
+              <a href="https://github.com/abifauzannn" rel="noreferrer" target="_blank"
                 className="text-[20px] poppins-regular flex items-center relative group"
                 data-aos="fade-left"
                 data-aos-delay="100"
@@ -243,8 +243,8 @@ function Home() {
               >
                 Github <MdArrowOutward />
                 <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </p>
-              <p
+              </a>
+              <a href="https://www.linkedin.com/in/mohammad-abi-fauzan/" rel="noreferrer" target="_blank"
                 className="text-[20px] poppins-regular flex items-center relative group"
                 data-aos="fade-left"
                 data-aos-delay="100"
@@ -252,7 +252,7 @@ function Home() {
               >
                 Linkedin <MdArrowOutward />
                 <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </p>
+              </a>
             </div>
           </div>
         )}
