@@ -19,25 +19,28 @@
     <title>React App</title>
 
     <style>
-      /* Atur body agar tidak ada kursor default */
       body {
         cursor: none;
         margin: 0;
         font-family: 'Poppins', sans-serif;
-        overflow: hidden; /* Hindari scroll berlebihan */
+        overflow: hidden;
       }
 
-      /* Desain kursor lingkaran */
       .custom-cursor {
         position: fixed;
         width: 20px;
         height: 20px;
         border: 2px solid white;
         border-radius: 50%;
-        pointer-events: none; /* Pastikan kursor tidak mengganggu elemen lain */
+        pointer-events: none;
         transform: translate(-50%, -50%);
         z-index: 9999;
-        will-change: transform; /* Optimisasi untuk animasi */
+        will-change: transform;
+      }
+
+      button {
+        position: relative;
+        z-index: 10; /* Mengatur z-index untuk memastikan tombol di atas kursor */
       }
     </style>
   </head>
@@ -45,18 +48,13 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <!-- Elemen untuk root React -->
     <div id="root"></div>
 
-    <!-- Elemen kursor lingkaran -->
     <div class="custom-cursor" id="customCursor"></div>
 
-    <!-- Tambahkan skrip untuk mengatur kursor -->
     <script>
-      // Tangkap elemen kursor
       const cursor = document.getElementById("customCursor");
 
-      // Fungsi untuk memindahkan kursor mengikuti posisi mouse
       document.addEventListener("mousemove", (event) => {
         cursor.style.left = `${event.pageX}px`;
         cursor.style.top = `${event.pageY}px`;
