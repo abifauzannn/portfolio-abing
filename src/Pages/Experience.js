@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Navigation from "../Components/Navigation"; // Import Navigation Component
+import { Link } from "react-router-dom";
+import Navigation from "../Components/Navigation";
 
-function Home() {
+function Experience() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -17,19 +18,16 @@ function Home() {
       <Navigation />
 
       {/* Main Section */}
-      <section className="text-center flex flex-col items-center justify-center flex-grow">
+      <section className="text-center flex flex-col items-center justify-center flex-grow text-white" >
         <h2
-          className="text-6xl poppins-regular text-white uppercase font-bold"
-          data-aos="flip-up"
+          className="text-6xl poppins-regular uppercase font-bold"
+          data-aos="fade-up"
         >
-          Mohammad
+          My Experience
         </h2>
-        <h2
-          className="text-6xl poppins-regular text-white uppercase font-bold"
-          data-aos="flip-up"
-        >
-          Abi Fauzan
-        </h2>
+        <p className="text-lg mt-4" data-aos="fade-up">
+          I have gained valuable experience in Web & App Development
+        </p>
       </section>
 
       {/* Footer */}
@@ -55,4 +53,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Experience;

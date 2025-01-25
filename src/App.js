@@ -1,16 +1,17 @@
-// src/App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";  // Import Home from the pages folder
-import About from "./Pages/About"; // Import About from the pages folder
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Experience from "./Pages/Experience";
+import Project from "./Pages/Project";
+
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Updated to use element instead of component */}
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/project" element={<Project />} />
       </Routes>
     </Router>
   );

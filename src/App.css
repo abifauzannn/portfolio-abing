@@ -9,25 +9,6 @@ html {
   font-variation-settings: normal; /* 6 */
 }
 
-body {
-  margin: 0; /* 1 */
-  line-height: inherit; /* 2 */
-  cursor: none;
-  margin: 0;
-  overflow: hidden; 
-}
-
-/* Gaya untuk lingkaran kursor */
-.custom-cursor {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  border: 2px solid red;
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999; /* Pastikan di atas elemen lain */
-}
 
 .poppins-thin {
   font-family: "Poppins", serif;

@@ -5,7 +5,10 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Website Portfolio Mohammad Abi Fauzan yang dibuat menggunakan ReactJS" />
+    <meta
+      name="description"
+      content="Website Portfolio Mohammad Abi Fauzan yang dibuat menggunakan ReactJS"
+    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,28 +22,13 @@
     <title>AbiFauzan</title>
 
     <style>
-      body {
-        cursor: none;
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        overflow: hidden;
+      * {
+        scrollbar-width: none; /* For Firefox */
+        -ms-overflow-style: none; /* For Internet Explorer and Edge */
       }
 
-      .custom-cursor {
-        position: fixed;
-        width: 20px;
-        height: 20px;
-        border: 2px solid white;
-        border-radius: 50%;
-        pointer-events: none;
-        transform: translate(-50%, -50%);
-        z-index: 9999;
-        will-change: transform;
-      }
-
-      button {
-        position: relative;
-        z-index: 10; /* Mengatur z-index untuk memastikan tombol di atas kursor */
+      *::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, and Opera */
       }
     </style>
   </head>
@@ -49,16 +37,5 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="root"></div>
-
-    <div class="custom-cursor" id="customCursor"></div>
-
-    <script>
-      const cursor = document.getElementById("customCursor");
-
-      document.addEventListener("mousemove", (event) => {
-        cursor.style.left = `${event.pageX}px`;
-        cursor.style.top = `${event.pageY}px`;
-      });
-    </script>
   </body>
 </html>
