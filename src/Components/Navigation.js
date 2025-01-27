@@ -85,6 +85,13 @@ function Navigation() {
                     HOME
                   </Link>
                   <Link
+                    to="/"
+                    className="text-9xl poppins-regular text-white uppercase font-bold hover:animate-pulse"
+                    data-aos="flip-up"
+                  >
+                    about
+                  </Link>
+                  <Link
                     to="/experience"
                     className="text-9xl poppins-regular text-white uppercase font-bold hover:animate-pulse"
                     data-aos="flip-up"
